@@ -17,5 +17,4 @@ globalData.planets.forEach(element => {
     card.append(image, title, description)
 
     cardSection.append(card)
-
 });

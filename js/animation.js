@@ -1,3 +1,5 @@
+closingCardBtn.addEventListener('click', closingAll);
+
 stopBtn.onclick = function() {
     earth.style.animationName = 'none';
     mars.style.animationName = 'none';
@@ -27,23 +29,7 @@ playBtn.onclick = function() {
     popUpVenus.style.opacity = 0;
     popUpJupiter.style.opacity = 0;
 
-    closingCardBtn.style.right = '-50px';
-    closingCardBtn.style.opacity = 0;
-
-    sunCard.style.opacity = 0; 
-    sunCard.style.top = '500px';
-
-    earthCard.style.opacity = 0;    
-    earthCard.style.top = '500px'; 
-
-    marsCard.style.opacity = 0;    
-    marsCard.style.top = '500px';   
-    
-    venusCard.style.opacity = 0;    
-    venusCard.style.top = '500px';   
-    
-    jupiterCard.style.opacity = 0;    
-    jupiterCard.style.top = '500px';   
+    closingAll() 
 
     setTimeout(function(){
         earth.style.animationName = 'rotation';
@@ -53,10 +39,8 @@ playBtn.onclick = function() {
     }, 700)
 }
 
-
 popUpEarth.onclick = function(){
-    closingCardBtn.style.right = '-4px';
-    closingCardBtn.style.opacity = 1;
+    getClosingCardBtn();
 
     earthCard.style.opacity = 1;
     earthCard.style.top = 0;
@@ -75,8 +59,7 @@ popUpEarth.onclick = function(){
 }
 
 popUpMars.onclick = function(){
-    closingCardBtn.style.right = '-4px';
-    closingCardBtn.style.opacity = 1;
+    getClosingCardBtn();
 
     marsCard.style.opacity = 1;
     marsCard.style.top = 0;
@@ -95,8 +78,7 @@ popUpMars.onclick = function(){
 }
 
 popUpVenus.onclick = function(){
-    closingCardBtn.style.right = '-4px';
-    closingCardBtn.style.opacity = 1;
+    getClosingCardBtn();
 
     venusCard.style.opacity = 1;
     venusCard.style.top = 0;
@@ -115,8 +97,7 @@ popUpVenus.onclick = function(){
 }
 
 popUpJupiter.onclick = function(){
-    closingCardBtn.style.right = '-4px';
-    closingCardBtn.style.opacity = 1;
+    getClosingCardBtn();
 
     sunCard.style.opacity = 0;    
     sunCard.style.top = '500px'; 
@@ -135,8 +116,7 @@ popUpJupiter.onclick = function(){
 }
 
 popUpSun.onclick = function(){
-    closingCardBtn.style.right = '-4px';
-    closingCardBtn.style.opacity = 1;
+    getClosingCardBtn();
     
     sunCard.style.opacity = 1;
     sunCard.style.top = 0;
@@ -152,24 +132,4 @@ popUpSun.onclick = function(){
     
     jupiterCard.style.opacity = 0;    
     jupiterCard.style.top = '500px';   
-}
-
-closingCardBtn.onclick = function(){
-    closingCardBtn.style.right = '-50px';
-    closingCardBtn.style.opacity = 0;
-
-    sunCard.style.opacity = 0; 
-    sunCard.style.top = '500px';
-
-    earthCard.style.opacity = 0;    
-    earthCard.style.top = '500px'; 
-
-    marsCard.style.opacity = 0;    
-    marsCard.style.top = '500px';   
-    
-    venusCard.style.opacity = 0;    
-    venusCard.style.top = '500px';   
-    
-    jupiterCard.style.opacity = 0;    
-    jupiterCard.style.top = '500px'; 
 }
