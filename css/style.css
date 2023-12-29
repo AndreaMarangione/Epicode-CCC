@@ -236,6 +236,10 @@ button:active {
     left: 5px;
 }
 
+.card h3{
+    margin-bottom: 0;
+}
+
 .card img{
     width: 250px;
     border-radius: 10px;
