@@ -43,20 +43,24 @@ playBtn.onclick = function() {
 
 popUpEarth.onclick = function(){
     earthCard.style.opacity = 1;
+    earthCard.style.zIndex = 1000;
     earthCard.style.top = 0;
 }
 
 popUpMars.onclick = function(){
     marsCard.style.opacity = 1;
+    marsCard.style.zIndex = 1000;
     marsCard.style.top = 0;
 }
 
 popUpVenus.onclick = function(){
     venusCard.style.opacity = 1;
+    venusCard.style.zIndex = 1000;
     venusCard.style.top = 0;
 }
 
 popUpJupiter.onclick = function(){
     jupiterCard.style.opacity = 1;
+    jupiterCard.style.zIndex = 1000;
     jupiterCard.style.top = 0;
 }
