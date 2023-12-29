@@ -208,7 +208,7 @@ button:active {
     left: 10%;
     height: 600px;
     overflow: hidden;
-    width: 350px;
+    width: 370px;
 }
 
 .card {
@@ -234,14 +234,11 @@ button:active {
     border-radius: 10px;
 }
 
-.card span {
-    font-size: 1.5em;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    cursor: pointer;
-}
 
-.card span:active{
-    top: 6px;
+#closingCardBtn {
+    position: absolute;
+    right: -50px;
+    font-size: 1.5em;
+    transition: all 700ms;
+    opacity: 0;
 }

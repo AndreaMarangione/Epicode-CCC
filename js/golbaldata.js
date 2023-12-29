@@ -11,6 +11,8 @@ const popUpMars = document.getElementById('descMars');
 const popUpVenus = document.getElementById('descVenus');
 const popUpJupiter = document.getElementById('descJupiter');
 
+const closingCardBtn = document.getElementById('closingCardBtn');
+
 
 const globalData = {
     planets: [

@@ -23,14 +23,19 @@ playBtn.onclick = function() {
     popUpVenus.style.opacity = 0;
     popUpJupiter.style.opacity = 0;
 
+    closingCardBtn.style.right = '-50px';
+    closingCardBtn.style.opacity = 0;
 
     earthCard.style.opacity = 0;    
+    earthCard.style.top = '500px'; 
+
     marsCard.style.opacity = 0;    
-    earthCard.style.top = '500px';   
     marsCard.style.top = '500px';   
+    
     venusCard.style.opacity = 0;    
-    jupiterCard.style.opacity = 0;    
     venusCard.style.top = '500px';   
+    
+    jupiterCard.style.opacity = 0;    
     jupiterCard.style.top = '500px';   
 
     setTimeout(function(){
@@ -41,22 +46,89 @@ playBtn.onclick = function() {
     }, 700)
 }
 
+
 popUpEarth.onclick = function(){
+    closingCardBtn.style.right = '-4px';
+    closingCardBtn.style.opacity = 1;
+
     earthCard.style.opacity = 1;
     earthCard.style.top = 0;
+
+    marsCard.style.opacity = 0;    
+    marsCard.style.top = '500px';   
+    
+    venusCard.style.opacity = 0;    
+    venusCard.style.top = '500px';   
+    
+    jupiterCard.style.opacity = 0;    
+    jupiterCard.style.top = '500px'; 
 }
 
 popUpMars.onclick = function(){
+    closingCardBtn.style.right = '-4px';
+    closingCardBtn.style.opacity = 1;
+
     marsCard.style.opacity = 1;
     marsCard.style.top = 0;
+
+    earthCard.style.opacity = 0;    
+    earthCard.style.top = '500px'; 
+
+    venusCard.style.opacity = 0;    
+    venusCard.style.top = '500px';   
+    
+    jupiterCard.style.opacity = 0;    
+    jupiterCard.style.top = '500px';   
 }
 
 popUpVenus.onclick = function(){
+    closingCardBtn.style.right = '-4px';
+    closingCardBtn.style.opacity = 1;
+
     venusCard.style.opacity = 1;
     venusCard.style.top = 0;
+
+    earthCard.style.opacity = 0;    
+    earthCard.style.top = '500px'; 
+
+    marsCard.style.opacity = 0;    
+    marsCard.style.top = '500px';   
+    
+    jupiterCard.style.opacity = 0;    
+    jupiterCard.style.top = '500px';   
 }
 
 popUpJupiter.onclick = function(){
+    closingCardBtn.style.right = '-4px';
+    closingCardBtn.style.opacity = 1;
+    
     jupiterCard.style.opacity = 1;
     jupiterCard.style.top = 0;
+
+    earthCard.style.opacity = 0;    
+    earthCard.style.top = '500px'; 
+
+    marsCard.style.opacity = 0;    
+    marsCard.style.top = '500px';   
+    
+    venusCard.style.opacity = 0;    
+    venusCard.style.top = '500px';   
+
+}
+
+closingCardBtn.onclick = function(){
+    closingCardBtn.style.right = '-50px';
+    closingCardBtn.style.opacity = 0;
+
+    earthCard.style.opacity = 0;    
+    earthCard.style.top = '500px'; 
+
+    marsCard.style.opacity = 0;    
+    marsCard.style.top = '500px';   
+    
+    venusCard.style.opacity = 0;    
+    venusCard.style.top = '500px';   
+    
+    jupiterCard.style.opacity = 0;    
+    jupiterCard.style.top = '500px'; 
 }
