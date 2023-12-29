@@ -28,7 +28,7 @@ footer{
     color: #fff;
     position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 120px;
     width: 100%;
     z-index: 1000;
     display: flex;
@@ -37,16 +37,20 @@ footer{
     align-items: center; 
 }
 
+footer p{
+    position: relative;
+    top: 10px;
+}
+
 main {
     margin: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(assets/Stelle.jpeg);
+    background-image: url(../assets/Stelle.jpeg);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 #galaxy-container{
     width: 100%;
@@ -56,9 +60,6 @@ main {
 #logo {
     min-width: 320px;
     width: 30%;
-    /* position: absolute;
-    left: 50%; 
-    transform: translate(-50%); */
 }
 
 #sun {
@@ -169,6 +170,8 @@ button {
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
+    line-height: 10px;
+    font-size: 1.5em;
 }
 
 button:hover {
@@ -178,4 +181,64 @@ button:hover {
 
 button:active {
     top: 1px;
+}
+
+
+.pop-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    font-size: 1.1em;
+    color: #040406;
+    border-radius: 5px;
+    z-index: 1000;
+    width: 75px;
+    height: 30px;
+    transition: all 700ms linear;
+    position: absolute; 
+    top: 50px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.card-section-left{
+    position: relative;
+    left: 10%;
+    top: -300px;
+}
+
+.card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 300px;
+    z-index: 1000;
+    box-shadow: 5px 5px 10px #040406;
+    opacity: 0;
+    transition: all 500ms;
+    top: 500px;
+}
+
+.card img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.card span {
+    font-size: 1.5em;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.card span:active{
+    top: 6px;
 }

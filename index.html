@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -13,35 +12,46 @@
         <img id="logo" src="assets/Universe-Logo.png" alt="Benvenuti nell'universo">
     </header>
     <main>
+        <section class="card-section-left">
+
+        </section>
         <div id="galaxy-container">
 
             <img id="sun" src="assets/Sole.jpg" alt="Sole">
 
             <div id="earth">
-                <img src="assets/Terra.PNG" alt="Pianeta Terra">
+                <div class="pop-up" id="descEarth">Terra</div>
+                <img src="assets/Terra.PNG" alt="Pianeta Terra" id="imgEarth">
             </div>
 
             <div id="mars">
+                <div class="pop-up" id="descMars">Marte</div>
                 <img src="assets/Marte.png" alt="Pianeta Marte">
             </div>
 
             <div id="venus">
+                <div class="pop-up" id="descVenus">Venere</div>
                 <img src="assets/Venere.png" alt="Pianeta Venere">
             </div>
 
             <div id="jupiter">
+                <div class="pop-up" id="descJupiter">Giove</div>
                 <img src="assets/Giove.gif" alt="Pianeta Giove">
             </div>
         </div>
     </main>
     <footer>
         <div class="buttons">
-            <button id="play">Play</button>
-            <button id="stop">Stop</button>
+            <button id="play"><ion-icon name="play"></ion-icon></button>
+            <button id="stop"><ion-icon name="pause-circle"></ion-icon></button>
         </div>
+        <div class="credits"><p>Contributors: </p></div>
     </footer>
-
-    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/golbaldata.js"></script>
+    <script src="./js/cards.js"></script>
+    <script src="./js/animation.js"></script>
 </body>
 
 </html>
