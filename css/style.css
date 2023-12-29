@@ -188,7 +188,7 @@ button:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: rgb(240, 240, 240);
     font-size: 1.1em;
     color: #040406;
     border-radius: 5px;
@@ -219,7 +219,7 @@ button:active {
     align-items: center;
     padding: 10px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: rgb(240, 240, 240);
     width: 300px;
     z-index: 1000;
     box-shadow: 0 0 10px #040406;
