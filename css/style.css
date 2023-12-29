@@ -63,12 +63,19 @@ main {
 }
 
 #sun {
-    width: 150px;
+    width: 90px;
     border-radius: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+#descSun{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    z-index: 1000;
 }
 
 #earth {
@@ -241,4 +248,5 @@ button:active {
     font-size: 1.5em;
     transition: all 700ms;
     opacity: 0;
+    z-index: 2000;
 }

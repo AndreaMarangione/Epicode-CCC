@@ -6,6 +6,7 @@ const mars = document.getElementById('mars');
 const venus = document.getElementById('venus');
 const jupiter = document.getElementById('jupiter');
 
+const popUpSun = document.getElementById('descSun');
 const popUpEarth = document.getElementById('descEarth');
 const popUpMars = document.getElementById('descMars');
 const popUpVenus = document.getElementById('descVenus');
@@ -16,6 +17,12 @@ const closingCardBtn = document.getElementById('closingCardBtn');
 
 const globalData = {
     planets: [
+        {
+            title : 'Il Sole',
+            description: "Il Sole, fulcro della nostra galassia, è una sorgente inesauribile di energia e luce. Una sfera ardente di gas caldo, il Sole irradia calore e luce, permettendo la vita sulla Terra. Le immense eruzioni solari e le danze di particelle creano uno spettacolo celeste. Esplorare il Sole è un viaggio nell'energia stellare, fornendo chiavi per comprendere il funzionamento fondamentale del nostro sistema solare. ☀️🌌",
+            path: './assets/imgCard/starSun.jpeg', 
+            id: 'sunCard'
+        },
         {
             title : 'Il Pianeta Terra',
             description: "La Terra è il nostro pianeta, ricco di varietà. Oceani estesi, montagne imponenti e una vasta gamma di creature lo caratterizzano. Le stagioni portano cambiamenti, dalla neve all'estate. Esplorare la Terra significa scoprire luoghi sorprendenti e creare connessioni con la diversità che offre. 🌍✨",
