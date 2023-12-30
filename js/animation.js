@@ -43,7 +43,7 @@ popUpEarth.onclick = function(){
     getClosingCardBtn();
 
     earthCard.style.opacity = 1;
-    earthCard.style.top = 0;
+    earthCard.style.top = '10%';
 
     sunCard.style.opacity = 0; 
     sunCard.style.top = '500px';
@@ -62,7 +62,7 @@ popUpMars.onclick = function(){
     getClosingCardBtn();
 
     marsCard.style.opacity = 1;
-    marsCard.style.top = 0;
+    marsCard.style.top = '10%';
 
     sunCard.style.opacity = 0; 
     sunCard.style.top = '500px';
@@ -81,7 +81,7 @@ popUpVenus.onclick = function(){
     getClosingCardBtn();
 
     venusCard.style.opacity = 1;
-    venusCard.style.top = 0;
+    venusCard.style.top = '10%';
 
     sunCard.style.opacity = 0; 
     sunCard.style.top = '500px';
@@ -103,7 +103,7 @@ popUpJupiter.onclick = function(){
     sunCard.style.top = '500px'; 
     
     jupiterCard.style.opacity = 1;
-    jupiterCard.style.top = 0;
+    jupiterCard.style.top = '10%';
 
     earthCard.style.opacity = 0;    
     earthCard.style.top = '500px'; 
@@ -119,7 +119,7 @@ popUpSun.onclick = function(){
     getClosingCardBtn();
     
     sunCard.style.opacity = 1;
-    sunCard.style.top = 0;
+    sunCard.style.top = '10%';
 
     earthCard.style.opacity = 0;    
     earthCard.style.top = '500px'; 

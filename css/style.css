@@ -2,16 +2,16 @@
 /* normalizing css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body{
+body {
     background: #040406;
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9em;
 }
 
-header{
+header {
     background: #040406;
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(10,10,11,1) 37%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 11, 1) 37%);
     width: 100%;
     height: 20%;
     min-height: 100px;
@@ -22,9 +22,9 @@ header{
     align-items: center;
 }
 
-footer{
-    background: rgb(10,10,11);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(10,10,11,1) 37%);
+footer {
+    background: rgb(10, 10, 11);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 11, 1) 37%);
     color: #fff;
     position: absolute;
     bottom: 0;
@@ -34,10 +34,10 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
-footer p{
+footer p {
     position: relative;
     top: 10px;
 }
@@ -46,15 +46,15 @@ main {
     margin: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/Stelle.jpeg);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#galaxy-container{
+#galaxy-container {
     width: 100%;
     height: 100%;
+    background-image: url(../assets/bg.jpg);
 }
 
 #logo {
@@ -63,19 +63,19 @@ main {
 }
 
 #sun {
-    width: 90px;
+    width: 70px;
     border-radius: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0 0 50px #CB7028;
 }
 
-#descSun{
+#descSun {
     position: absolute;
     left: 50%;
     top: 60%;
-    z-index: 1000;
 }
 
 #earth {
@@ -191,7 +191,7 @@ button:active {
 }
 
 
-.pop-up{
+.pop-up {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,32 +203,30 @@ button:active {
     width: 75px;
     height: 30px;
     transition: all 700ms linear;
-    position: absolute; 
+    position: absolute;
     top: 50px;
     opacity: 0;
     cursor: pointer;
 }
 
 
-.card-section-left{
+.card-section-left {
     position: absolute;
     left: 10%;
     height: 600px;
     overflow: hidden;
-    width: 370px;
+    width: 415px;
 }
 
 .card {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 10px;
     border-radius: 10px;
     background-color: rgb(240, 240, 240);
-    width: 300px;
-    z-index: 1000;
+    width: 340px;
+    z-index: 2000;
     box-shadow: 0 0 10px #040406;
     opacity: 0;
     transition: all 500ms;
@@ -236,15 +234,21 @@ button:active {
     left: 5px;
 }
 
-.card h3{
+.card h3 {
     margin-bottom: 0;
 }
 
-.card img{
-    width: 250px;
+.card img {
+    width: 300px;
     border-radius: 10px;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 20px;
 }
 
+.card p {
+    width: 300px;
+}
 
 #closingCardBtn {
     position: absolute;
@@ -253,4 +257,5 @@ button:active {
     transition: all 700ms;
     opacity: 0;
     z-index: 2000;
+    top: 65px;
 }

@@ -14,6 +14,31 @@ const popUpJupiter = document.getElementById('descJupiter');
 
 const closingCardBtn = document.getElementById('closingCardBtn');
 
+function closingAll(event) {
+    closingCardBtn.style.right = '-50px';
+    closingCardBtn.style.opacity = 0;
+
+    sunCard.style.opacity = 0; 
+    sunCard.style.top = '500px';
+
+    earthCard.style.opacity = 0;    
+    earthCard.style.top = '500px'; 
+
+    marsCard.style.opacity = 0;    
+    marsCard.style.top = '500px';   
+    
+    venusCard.style.opacity = 0;    
+    venusCard.style.top = '500px';   
+    
+    jupiterCard.style.opacity = 0;    
+    jupiterCard.style.top = '500px'; 
+}
+
+function getClosingCardBtn(event) {
+    closingCardBtn.style.right = '0px';
+    closingCardBtn.style.opacity = 1;
+}
+
 
 const globalData = {
     planets: [
@@ -50,27 +75,3 @@ const globalData = {
     ]
 }
 
-function closingAll(event) {
-    closingCardBtn.style.right = '-50px';
-    closingCardBtn.style.opacity = 0;
-
-    sunCard.style.opacity = 0; 
-    sunCard.style.top = '500px';
-
-    earthCard.style.opacity = 0;    
-    earthCard.style.top = '500px'; 
-
-    marsCard.style.opacity = 0;    
-    marsCard.style.top = '500px';   
-    
-    venusCard.style.opacity = 0;    
-    venusCard.style.top = '500px';   
-    
-    jupiterCard.style.opacity = 0;    
-    jupiterCard.style.top = '500px'; 
-}
-
-function getClosingCardBtn(event) {
-    closingCardBtn.style.right = '-4px';
-    closingCardBtn.style.opacity = 1;
-}
