@@ -14,6 +14,15 @@ const popUpJupiter = document.getElementById('descJupiter');
 
 const closingCardBtn = document.getElementById('closingCardBtn');
 
+const preloader = document.getElementById('preloader');
+
+window.onload = function() {
+    preloader.style.opacity = 0;
+    setInterval(function(){
+        preloader.style.display = 'none';
+    },500)
+}
+
 function closingAll(event) {
     closingCardBtn.style.right = '-50px';
     closingCardBtn.style.opacity = 0;

@@ -259,3 +259,21 @@ button:active {
     z-index: 2000;
     top: 65px;
 }
+
+#preloader {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    transition: all 500ms;
+}
+
+#preloader-icon {
+    animation: rotation infinite linear 2000ms;
+}
