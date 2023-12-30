@@ -23,6 +23,14 @@ window.onload = function() {
     },500)
 }
 
+if (window.navigator.userAgent.indexOf('Safari') == 102) {
+    const headerBg = document.getElementById('header');   
+    const footerBg = document.getElementById('footer');   
+
+    headerBg.style.background = '#040406';
+    footerBg.style.background = '#040406';
+}
+
 function closingAll(event) {
     closingCardBtn.style.right = '-50px';
     closingCardBtn.style.opacity = 0;
