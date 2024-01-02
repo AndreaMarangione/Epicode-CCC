@@ -350,3 +350,84 @@ button:active {
 #preloader-icon {
     animation: rotation infinite linear 2000ms;
 }
+
+  /* dispositivi mobili (portrait and landscape) */
+  @media only screen and (max-width: 767px) {
+    /* regole per il mobile qui */
+    #galaxy-container{
+        display: none;
+    }
+
+    #logo {
+        width: 90%;
+    }
+
+    body {
+        background-image: url(../assets/bg.jpg);
+    }
+
+    header {
+        height: 15%;
+    }
+
+    footer button{
+        display: none;
+    }
+
+    footer {
+        height: 80px;
+        position: fixed;
+    }
+
+    main {
+        top: 100px;
+        position: relative;
+        height: auto ;
+    }
+
+    .card-section-left {
+        position: relative;
+        width: 100%;
+        left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: scroll;
+        height: 700px;
+    }
+
+    #closingCardBtn {display: none;}
+
+    .card {
+        position: relative;
+        width: 95%;
+        opacity: 1;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        margin-top: -5px;
+    }
+
+    .card img{
+        margin-bottom: 5px;
+    }
+    
+    .card-section-left :nth-child(2){
+        margin-top: 0;
+    }
+
+    .card p, .card img{ width: 90%;}
+
+  }
+  
+  /* dispositivi tablet  */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+   /* regole per il tablet qui */
+  }
+  
+  /* Desktop */
+  @media only screen and (min-width: 1024px) {
+     /* regole per il desktop qui */
+  }
