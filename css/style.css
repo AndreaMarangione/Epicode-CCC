@@ -49,6 +49,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #galaxy-container {
@@ -57,6 +58,7 @@ main {
     background-image: url(../assets/bg.jpg);
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 
 #logo {
@@ -70,7 +72,6 @@ main {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0 0 50px #CB7028;
 }
 
@@ -80,12 +81,49 @@ main {
     top: 60%;
 }
 
+#mercury {
+    width: 150px;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 4s;
+}
+
+#mercury img {
+    width: 15px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 8s;
+}
+
+#venus {
+    width: 180px;
+    position: absolute;
+    left: 46%;
+    top: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 5s;
+}
+
+#venus img {
+    width: 15px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 8s;
+}
+
 #earth {
     width: 300px;
     position: absolute;
     left: 43%;
     top: 50%;
-    transform: translate(-50%, -50%);
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -103,9 +141,8 @@ main {
 #mars {
     width: 500px;
     position: absolute;
-    left: 36%;
+    left: 40%;
     top: 50%;
-    transform: translate(-50%, -50%);
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -120,32 +157,11 @@ main {
     animation-duration: 8s;
 }
 
-#venus {
-    width: 150px;
-    position: absolute;
-    left: 47%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-name: rotation;
-    animation-duration: 5s;
-}
-
-#venus img {
-    width: 15px;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-name: rotation;
-    animation-duration: 8s;
-}
-
 #jupiter {
     width: 700px;
     position: absolute;
-    left: 28%;
+    left: 37%;
     top: 50%;
-    transform: translate(-50%, -50%);
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -154,6 +170,63 @@ main {
 
 #jupiter img {
     width: 30px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 8s;
+}
+
+#saturn {
+    width: 900px;
+    position: absolute;
+    left: 33%;
+    top: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 15s;
+}
+
+#saturn img {
+    width: 50px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 8s;
+}
+
+#uranus {
+    width: 1100px;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 17s;
+}
+
+#uranus img {
+    width: 50px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 8s;
+}
+
+#neptune {
+    width: 1300px;
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 19s;
+}
+
+#neptune img {
+    width: 50px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -192,7 +265,6 @@ button:active {
     top: 1px;
 }
 
-
 .pop-up {
     display: flex;
     align-items: center;
@@ -211,10 +283,9 @@ button:active {
     cursor: pointer;
 }
 
-
 .card-section-left {
     position: absolute;
-    left: 10%;
+    left: 65%;
     height: 600px;
     overflow: hidden;
     width: 415px;
