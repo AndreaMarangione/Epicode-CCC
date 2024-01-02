@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,32 @@
 </head>
 
 <body>
-    <div id="preloader"><ion-icon name="reload-outline" id="preloader-icon"></ion-icon></div>
-    <header id="header">
+    <div id="preloader">
+        <ion-icon name="reload-outline" id="preloader-icon"></ion-icon>
+    </div>
+
+    <header>
         <img id="logo" src="assets/Universe-Logo.png" alt="Benvenuti nell'universo">
     </header>
+
     <main>
         <section class="card-section-left">
             <button id="closingCardBtn"><ion-icon name="close-circle"></ion-icon></button>
         </section>
-        <div id="galaxy-container">
 
+        <div id="galaxy-container">
             <img id="sun" src="assets/sun.png" alt="Sole">
             <div class="pop-up" id="descSun">Sole</div>
+
+            <div id="mercury">
+                <div class="pop-up" id="descMercury">Mercurio</div>
+                <img src="assets/Mercury.png" alt="Pianeta Mercurio">
+            </div>
+
+            <div id="venus">
+                <div class="pop-up" id="descVenus">Venere</div>
+                <img src="assets/Venere.png" alt="Pianeta Venere">
+            </div>
 
             <div id="earth">
                 <div class="pop-up" id="descEarth">Terra</div>
@@ -31,25 +46,39 @@
                 <img src="assets/mars.png" alt="Pianeta Marte">
             </div>
 
-            <div id="venus">
-                <div class="pop-up" id="descVenus">Venere</div>
-                <img src="assets/Venere.png" alt="Pianeta Venere">
-            </div>
-
             <div id="jupiter">
                 <div class="pop-up" id="descJupiter">Giove</div>
                 <img src="assets/jupiter.png" alt="Pianeta Giove">
             </div>
+
+            <div id="saturn">
+                <div class="pop-up" id="descSaturn">Saturno</div>
+                <img src="assets/Saturn.png" alt="Pianeta Saturno">
+            </div>
+
+            <div id="uranus">
+                <div class="pop-up" id="descUranus">Urano</div>
+                <img src="assets/Uranus.png" alt="Pianeta Urano">
+            </div>
+
+            <div id="neptune">
+                <div class="pop-up" id="descNeptune">Nettuno</div>
+                <img src="assets/Neptune.png" alt="Pianeta Nettuno">
+            </div>
         </div>
     </main>
-    
-    <footer id="footer">
+
+    <footer>
         <div class="buttons">
             <button id="play"><ion-icon name="play"></ion-icon></button>
             <button id="stop"><ion-icon name="pause-circle"></ion-icon></button>
         </div>
-        <div class="credits"><p>Contributors: </p></div>
+
+        <div class="credits">
+            <p>Contributors: </p>
+        </div>
     </footer>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./js/golbaldata.js"></script>

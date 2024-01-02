@@ -1,6 +1,5 @@
 const cardSection = document.querySelector('.card-section-left');
 
-
 globalData.planets.forEach(element => {
     const card = document.createElement('div');
     card.classList.add('card');
@@ -14,7 +13,7 @@ globalData.planets.forEach(element => {
     title.innerText = element.title;
     description.innerText = element.description;
 
-    card.append(image, title, description)
+    card.append(image, title, description);
 
-    cardSection.append(card)
+    cardSection.append(card);
 });
