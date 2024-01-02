@@ -1,6 +1,9 @@
 const playBtn = document.getElementById('play');
 const stopBtn = document.getElementById('stop');
 
+const divPlanets = document.querySelectorAll('#galaxy-container > div');
+const popUpPlanets = document.querySelectorAll('.pop-up');
+
 const mercury = document.getElementById('mercury');
 const venus = document.getElementById('venus');
 const earth = document.getElementById('earth');
@@ -24,6 +27,7 @@ const closingCardBtn = document.getElementById('closingCardBtn');
 
 const preloader = document.getElementById('preloader');
 
+
 window.onload = function() {
     preloader.style.opacity = 0;
     setInterval(function(){
@@ -39,12 +43,21 @@ if (window.navigator.userAgent.indexOf('Safari') == 102) {
     footerBg.style.background = '#040406';
 }
 
+function closingPopUp() {
+    popUpPlanets.forEach(popup => {
+        popup.style.opacity = 0;
+    })
+}
+
 function closingAll(event) {
     closingCardBtn.style.right = '-50px';
     closingCardBtn.style.opacity = 0;
 
     sunCard.style.opacity = 0; 
     sunCard.style.top = '500px';
+    
+    mercuryCard.style.opacity = 0; 
+    mercuryCard.style.top = '500px';
 
     venusCard.style.opacity = 0;    
     venusCard.style.top = '500px';   
