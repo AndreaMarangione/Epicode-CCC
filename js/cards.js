@@ -15,11 +15,10 @@ globalData.planets.forEach(element => {
     description.innerText = element.description;
     urlFromWiki.href = element.wikiUrl;
     urlFromWiki.target = '_blank';
-    urlFromWiki.innerText = 'Scopri di piu >>';
+    urlFromWiki.innerText = ' Scopri di piu >>';
 
-    card.append(image, title, description, urlFromWiki);
+    description.append(urlFromWiki);
+    card.append(image, title, description);
 
     cardSection.append(card);
 });
-
-// Nella card del Sole, di Venere e di Giove non funziona il link (??????) mistero
