@@ -10,6 +10,7 @@ globalData.planets.forEach(element => {
     const description = document.createElement('p');
     const urlFromWiki = document.createElement('a');
     
+    card.ariaValueText = element.id;
     image.src = element.path;
     title.innerText = element.title;
     description.innerText = element.description;
@@ -21,4 +22,6 @@ globalData.planets.forEach(element => {
     card.append(image, title, description);
 
     cardSection.append(card);
+
+console.log(card.ariaValueText);
 });
