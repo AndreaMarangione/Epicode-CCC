@@ -1,24 +1,43 @@
-const cardSection = document.querySelector('.card-section-left');
+function createCard(planet) {
+    const cardSection = document.querySelector('.card-section-left');
 
-globalData.planets.forEach(element => {
-    const card = document.createElement('div');
-    card.classList.add('card');
-    card.id = element.id;
+    if (cardSection.childNodes.length > 0) {
+        cardSection.firstChild.remove();
+    }
 
-    const image = document.createElement('img');
-    const title = document.createElement('h3');
-    const description = document.createElement('p');
-    const urlFromWiki = document.createElement('a');
-    
-    image.src = element.path;
-    title.innerText = element.title;
-    description.innerText = element.description;
-    urlFromWiki.href = element.wikiUrl;
-    urlFromWiki.target = '_blank';
-    urlFromWiki.innerText = ' Scopri di piu >>';
+    globalData.planets.forEach(element => {
+        if (planet == element.name) {
+            const card = document.createElement('div');
+            card.classList.add('card');
 
-    description.append(urlFromWiki);
-    card.append(image, title, description);
+            const image = document.createElement('img');
+            const title = document.createElement('h3');
+            const description = document.createElement('p');
+            const urlFromWiki = document.createElement('a');
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '<ion-icon name="close-circle"></ion-icon>';
+ 
+            image.src = element.path;
+            title.textContent = element.title;
+            description.textContent = element.description;
+            urlFromWiki.href = element.wikiUrl;
+            urlFromWiki.target = '_blank';
+            urlFromWiki.textContent = ' Scopri di piu >>';
 
-    cardSection.append(card);
-});
+            description.append(urlFromWiki);
+            card.append(closeBtn, image, title, description);
+            cardSection.append(card);
+
+            card.style.opacity = 1;
+            card.style.top = '10%';
+
+            closeBtn.onclick = function () {
+                card.style.opacity = 0;
+                card.style.top = '500px';
+                setInterval(function () {
+                    card.remove();
+                }, 800)
+            }
+        }
+    })
+}
