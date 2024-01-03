@@ -323,6 +323,12 @@ button:active {
 
 .card p {
     width: 300px;
+    margin: 5px 0;
+}
+
+.card a{
+    color: #040406;
+    margin-bottom: 10px;
 }
 
 #closingCardBtn {

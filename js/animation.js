@@ -36,6 +36,9 @@ popUpSun.onclick = function () {
     sunCard.style.opacity = 1;
     sunCard.style.top = '10%';
 
+    mercuryCard.style.opacity = 0;
+    mercuryCard.style.top = '500px';
+
     venusCard.style.opacity = 0;
     venusCard.style.top = '500px';
 
