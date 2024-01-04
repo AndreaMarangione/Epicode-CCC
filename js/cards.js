@@ -15,8 +15,9 @@ function createCard(planet) {
             const description = document.createElement('p');
             const urlFromWiki = document.createElement('a');
             const closeBtn = document.createElement('button');
-            closeBtn.innerHTML = '<ion-icon name="close-circle"></ion-icon>';
+            closeBtn.classList.add('cardBtn');
 
+            closeBtn.innerHTML = '<ion-icon name="close-circle"></ion-icon>';
             image.src = element.path;
             title.textContent = element.title;
             description.textContent = element.description;
