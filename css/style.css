@@ -270,7 +270,7 @@ button {
 
 button:hover {
     color: #040406;
-    background-color: #fff;
+    background-color: rgb(240, 240, 240);
 }
 
 button:active {
@@ -378,7 +378,41 @@ button:active {
 
     /* regole per il mobile qui */
     #galaxy-container {
-        display: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        gap: 30px;
+    }
+
+    .pop-up{
+        opacity: 1;
+        top: 0;
+    }
+
+    #galaxy-container  div, #galaxy-container img, #galaxy-container button{
+        position: relative;
+        animation-name: none;
+    }
+
+    #galaxy-container div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        left: 0;
+        top: 50%;
+        width: 100%;
+    }
+
+    #galaxy-container img{
+        width: 80px;
+    }
+
+    #sunContainer {
+        transform: none;
     }
 
     #logo {
@@ -391,6 +425,7 @@ button:active {
 
     header {
         height: 15%;
+        z-index: 5000;
     }
 
     footer button {
@@ -403,12 +438,10 @@ button:active {
     }
 
     main {
-        top: 100px;
         position: relative;
-        height: auto;
     }
 
-    .card-section-left {
+    /* .card-section-left {
         position: relative;
         width: 100%;
         left: auto;
@@ -418,11 +451,7 @@ button:active {
         flex-wrap: wrap;
         overflow: scroll;
         height: 700px;
-    }
-
-    #closingCardBtn {
-        display: none;
-    }
+    } */
 
     .card {
         position: relative;
