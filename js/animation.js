@@ -1,17 +1,14 @@
 stopBtn.onclick = function () {
-    divPlanets.forEach(planet => {
-        planet.style.animationName = 'none';
-        planet.classList.add('static-planet');
-    });
+    for (let index = 1; index < divPlanets.length; index++) {
+        divPlanets[index].style.animationName = 'none';
+        divPlanets[index].style.left = globalData.planets[index].staticPosition;
+    }
 
-    popUpPlanets.forEach(popup => {
-        popup.style.opacity = 1;
-        popup.style.top = '30px';
-    })
-
-    popUpSun.style.opacity = 1;
-    popUpSun.style.top = '52%';
-    popUpSun.style.left = '52%';
+    for(let index = 0; index < popUpPlanets.length; index++) {
+        popUpPlanets[index].style.opacity = 1;
+        popUpPlanets[index].style.top = globalData.planets[index].popUpPosition.top;
+        popUpPlanets[index].style.left = globalData.planets[index].popUpPosition.left;
+    }
 }
 
 playBtn.onclick = function () {
@@ -19,11 +16,17 @@ playBtn.onclick = function () {
     createCard('');
 
     setTimeout(function () {
-        divPlanets.forEach(planet => {
-            planet.style.animationName = 'rotation';
-            planet.classList.remove('static-planet');
-        });
+        for (let index = 1; index < divPlanets.length; index++) {
+            divPlanets[index].style.animationName = 'rotation';
+            divPlanets[index].style.left = globalData.planets[index].dynamicPosition.left;
+        }
     }, 700)
+}
+
+function closingPopUp() {
+    popUpPlanets.forEach(popup => {
+        popup.style.opacity = 0;
+    })
 }
 
 function clickPopUp() {

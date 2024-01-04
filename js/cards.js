@@ -16,7 +16,7 @@ function createCard(planet) {
             const urlFromWiki = document.createElement('a');
             const closeBtn = document.createElement('button');
             closeBtn.innerHTML = '<ion-icon name="close-circle"></ion-icon>';
- 
+
             image.src = element.path;
             title.textContent = element.title;
             description.textContent = element.description;
@@ -36,7 +36,7 @@ function createCard(planet) {
                 card.style.top = '500px';
                 setInterval(function () {
                     card.remove();
-                }, 800)
+                }, 500)
             }
         }
     })

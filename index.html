@@ -16,7 +16,9 @@
     <header id="header">
         <img id="logo" src="assets/Universe-Logo.png" alt="Benvenuti nell'universo">
         <div class="github-btn">
-            <a class="github-button" href="https://github.com/AndreaMarangione/Epicode-CCC" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Watch AndreaMarangione/Epicode-CCC on GitHub">View on GitHub</a>
+            <a class="github-button" href="https://github.com/AndreaMarangione/Epicode-CCC"
+                data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large"
+                aria-label="Watch AndreaMarangione/Epicode-CCC on GitHub">View on GitHub</a>
         </div>
     </header>
 
@@ -25,46 +27,48 @@
         </section>
 
         <div id="galaxy-container">
-            <img id="sun" src="assets/sun.png" alt="Sole">
-            <div class="pop-up" aria-valuetext="sun" id="descSun">Sole</div>
+            <div id="sunContainer">
+                <button class="pop-up" aria-valuetext="sun">Sole</button>
+                <img src="assets/sun.png" alt="Sole">
+            </div>
 
-            <div id="mercury">
-                <div class="pop-up" aria-valuetext="mercury" id="descMercury">Mercurio</div>
+            <div id="mercuryContainer">
+                <button class="pop-up" aria-valuetext="mercury">Mercurio</button>
                 <img src="assets/Mercury.png" alt="Pianeta Mercurio">
             </div>
 
-            <div id="venus">
-                <div class="pop-up" aria-valuetext="venus" id="descVenus">Venere</div>
+            <div id="venusContainer">
+                <button class="pop-up" aria-valuetext="venus">Venere</button>
                 <img src="assets/Venere.png" alt="Pianeta Venere">
             </div>
 
-            <div id="earth">
-                <div class="pop-up" aria-valuetext="earth" id="descEarth">Terra</div>
+            <div id="earthContainer">
+                <button class="pop-up" aria-valuetext="earth">Terra</button>
                 <img src="assets/Terra.PNG" alt="Pianeta Terra" id="imgEarth">
             </div>
 
-            <div id="mars">
-                <div class="pop-up" aria-valuetext="mars" id="descMars">Marte</div>
+            <div id="marsContainer">
+                <button class="pop-up" aria-valuetext="mars">Marte</button>
                 <img src="assets/mars.png" alt="Pianeta Marte">
             </div>
 
-            <div id="jupiter">
-                <div class="pop-up" aria-valuetext="jupiter" id="descJupiter">Giove</div>
+            <div id="jupiterContainer">
+                <button class="pop-up" aria-valuetext="jupiter">Giove</button>
                 <img src="assets/jupiter.png" alt="Pianeta Giove">
             </div>
 
-            <div id="saturn">
-                <div class="pop-up" aria-valuetext="saturn" id="descSaturn">Saturno</div>
+            <div id="saturnContainer">
+                <button class="pop-up" aria-valuetext="saturn">Saturno</button>
                 <img src="assets/Saturn.png" alt="Pianeta Saturno">
             </div>
 
-            <div id="uranus">
-                <div class="pop-up" aria-valuetext="uranus" id="descUranus">Urano</div>
+            <div id="uranusContainer">
+                <button class="pop-up" aria-valuetext="uranus">Urano</button>
                 <img src="assets/Uranus.png" alt="Pianeta Urano">
             </div>
 
-            <div id="neptune">
-                <div class="pop-up" aria-valuetext="neptune" id="descNeptune">Nettuno</div>
+            <div id="neptuneContainer">
+                <button class="pop-up" aria-valuetext="neptune">Nettuno</button>
                 <img src="assets/Neptune.png" alt="Pianeta Nettuno">
             </div>
         </div>
@@ -76,9 +80,10 @@
             <button id="stop"><ion-icon name="pause-circle"></ion-icon></button>
         </div>
         <div class="credits">
-            <p>Contributors: 
-                <a href="https://github.com/AndreaMarangione"  aria-label="Follow @AndreaMarangione on GitHub">@AndreaMarangione</a> &amp;
-                <a href="https://github.com/giacomosx"  aria-label="Follow @giacomosx on GitHub">@giacomosx</a> 
+            <p>Contributors:
+                <a href="https://github.com/AndreaMarangione"
+                    aria-label="Follow @AndreaMarangione on GitHub">@AndreaMarangione</a> &amp;
+                <a href="https://github.com/giacomosx" aria-label="Follow @giacomosx on GitHub">@giacomosx</a>
             </p>
         </div>
     </footer>
@@ -86,7 +91,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script src="./js/golbaldata.js"></script>
+    <script src="./js/globaldata.js"></script>
     <script src="./js/cards.js"></script>
     <script src="./js/animation.js"></script>
 </body>

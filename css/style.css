@@ -44,12 +44,12 @@ footer p {
     font-size: 0.9em;
 }
 
-footer a{
+footer a {
     color: #fff;
     text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -78,25 +78,25 @@ main {
     width: 30%;
 }
 
-#sun {
+#sunContainer {
     width: 70px;
-    border-radius: 100%;
+    height: 70px;
     position: absolute;
     left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sunContainer img {
+    width: 70px;
+    border-radius: 100%;
     box-shadow: 0 0 50px #CB7028;
 }
 
-#descSun {
-    position: absolute;
-    left: 50%;
-    top: 60%;
-}
-
-#mercury {
+#mercuryContainer {
     width: 150px;
     position: absolute;
-    left: 48%;
+    left: 47%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -104,7 +104,7 @@ main {
     animation-duration: 4s;
 }
 
-#mercury img {
+#mercuryContainer img {
     width: 15px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -112,10 +112,10 @@ main {
     animation-duration: 8s;
 }
 
-#venus {
-    width: 180px;
+#venusContainer {
+    width: 220px;
     position: absolute;
-    left: 46%;
+    left: 45%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -123,7 +123,7 @@ main {
     animation-duration: 5s;
 }
 
-#venus img {
+#venusContainer img {
     width: 15px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -131,10 +131,10 @@ main {
     animation-duration: 8s;
 }
 
-#earth {
-    width: 300px;
+#earthContainer {
+    width: 330px;
     position: absolute;
-    left: 43%;
+    left: 42%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -142,7 +142,7 @@ main {
     animation-duration: 6s;
 }
 
-#earth img {
+#earthContainer img {
     width: 25px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -150,10 +150,10 @@ main {
     animation-duration: 8s;
 }
 
-#mars {
-    width: 500px;
+#marsContainer {
+    width: 480px;
     position: absolute;
-    left: 40%;
+    left: 39%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -161,7 +161,7 @@ main {
     animation-duration: 10s;
 }
 
-#mars img {
+#marsContainer img {
     width: 20px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -169,10 +169,10 @@ main {
     animation-duration: 8s;
 }
 
-#jupiter {
-    width: 700px;
+#jupiterContainer {
+    width: 650px;
     position: absolute;
-    left: 37%;
+    left: 36%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -180,7 +180,7 @@ main {
     animation-duration: 12s;
 }
 
-#jupiter img {
+#jupiterContainer img {
     width: 30px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -188,10 +188,10 @@ main {
     animation-duration: 8s;
 }
 
-#saturn {
-    width: 900px;
+#saturnContainer {
+    width: 880px;
     position: absolute;
-    left: 33%;
+    left: 32%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -199,18 +199,18 @@ main {
     animation-duration: 15s;
 }
 
-#saturn img {
-    width: 50px;
+#saturnContainer img {
+    width: 45px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
     animation-duration: 8s;
 }
 
-#uranus {
+#uranusContainer {
     width: 1100px;
     position: absolute;
-    left: 30%;
+    left: 29%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -218,7 +218,7 @@ main {
     animation-duration: 17s;
 }
 
-#uranus img {
+#uranusContainer img {
     width: 50px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -226,10 +226,10 @@ main {
     animation-duration: 8s;
 }
 
-#neptune {
+#neptuneContainer {
     width: 1300px;
     position: absolute;
-    left: 27%;
+    left: 26%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -237,7 +237,7 @@ main {
     animation-duration: 19s;
 }
 
-#neptune img {
+#neptuneContainer img {
     width: 50px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -286,13 +286,14 @@ button:active {
     color: #040406;
     border-radius: 5px;
     z-index: 1000;
-    height: 30px;
     padding: 0 5px;
     transition: all 700ms linear;
     position: absolute;
     top: 50px;
     opacity: 0;
     cursor: pointer;
+    width: 75px;
+    height: 30px;
 }
 
 .card-section-left {
@@ -336,7 +337,7 @@ button:active {
     margin: 20px 0;
 }
 
-.card a{
+.card a {
     color: #040406;
     margin-bottom: 10px;
 }
@@ -368,16 +369,11 @@ button:active {
     animation: rotation infinite linear 2000ms;
 }
 
-.static-planet{
-    position: relative!important;
-    width: 50px!important;
-    margin-right: -90px;
-}
+/* dispositivi mobili (portrait and landscape) */
+@media only screen and (max-width: 767px) {
 
-  /* dispositivi mobili (portrait and landscape) */
-  @media only screen and (max-width: 767px) {
     /* regole per il mobile qui */
-    #galaxy-container{
+    #galaxy-container {
         display: none;
     }
 
@@ -393,7 +389,7 @@ button:active {
         height: 15%;
     }
 
-    footer button{
+    footer button {
         display: none;
     }
 
@@ -405,7 +401,7 @@ button:active {
     main {
         top: 100px;
         position: relative;
-        height: auto ;
+        height: auto;
     }
 
     .card-section-left {
@@ -420,7 +416,9 @@ button:active {
         height: 700px;
     }
 
-    #closingCardBtn {display: none;}
+    #closingCardBtn {
+        display: none;
+    }
 
     .card {
         position: relative;
@@ -433,30 +431,33 @@ button:active {
         margin-top: -5px;
     }
 
-    .card img{
+    .card img {
         margin-bottom: 5px;
     }
-    
-    .card-section-left :nth-child(2){
+
+    .card-section-left :nth-child(2) {
         margin-top: 0;
     }
 
-    .card p, .card img{ width: 90%;}
+    .card p,
+    .card img {
+        width: 90%;
+    }
 
-  }
+}
 
-  .github-btn{
+.github-btn {
     position: absolute;
     top: 10%;
     right: 1%;
-  }
-  
-  /* dispositivi tablet  */
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-   /* regole per il tablet qui */
-  }
-  
-  /* Desktop */
-  @media only screen and (min-width: 1024px) {
-     /* regole per il desktop qui */
-  }
+}
+
+/* dispositivi tablet  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* regole per il tablet qui */
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    /* regole per il desktop qui */
+}
