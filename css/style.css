@@ -270,7 +270,7 @@ button {
 
 button:hover {
     color: #040406;
-    background-color: #fff;
+    background-color: rgb(240, 240, 240);
 }
 
 button:active {
@@ -373,12 +373,45 @@ button:active {
     animation: rotation infinite linear 2000ms;
 }
 
-/* dispositivi mobili (portrait and landscape) */
+/* mobile  */
 @media only screen and (max-width: 767px) {
-
-    /* regole per il mobile qui */
     #galaxy-container {
-        display: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        gap: 30px;
+        background-image: none;
+    }
+
+    .pop-up{
+        opacity: 1;
+        top: 0;
+    }
+
+    #galaxy-container  div, #galaxy-container img, #galaxy-container button{
+        position: relative;
+        animation-name: none;
+    }
+
+    #galaxy-container div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        left: 0;
+        top: 30%;
+        width: 100%;
+    }
+
+    #galaxy-container img{
+        width: 80px;
+    }
+
+    #sunContainer {
+        transform: none;
     }
 
     #logo {
@@ -387,10 +420,13 @@ button:active {
 
     body {
         background-image: url(../assets/bg.jpg);
+        overflow: visible;
+        background-position: center;
     }
 
     header {
         height: 15%;
+        z-index: 5000;
     }
 
     footer button {
@@ -399,17 +435,15 @@ button:active {
 
     footer {
         height: 80px;
-        position: fixed;
+        position: relative;
     }
 
     main {
-        top: 100px;
         position: relative;
-        height: auto;
     }
 
     .card-section-left {
-        position: relative;
+        position: absolute;
         width: 100%;
         left: auto;
         display: flex;
@@ -420,10 +454,6 @@ button:active {
         height: 700px;
     }
 
-    #closingCardBtn {
-        display: none;
-    }
-
     .card {
         position: relative;
         width: 95%;
@@ -431,16 +461,12 @@ button:active {
         margin: 0 auto;
         top: 0;
         left: 0;
-        z-index: 0;
+        z-index: 3000;
         margin-top: -5px;
     }
 
     .card img {
         margin-bottom: 5px;
-    }
-
-    .card-section-left :nth-child(2) {
-        margin-top: 0;
     }
 
     .card p,
@@ -455,6 +481,8 @@ button:active {
     top: 10%;
     right: 1%;
 }
+<<<<<<< HEAD
+=======
 
 /* dispositivi tablet  */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -465,3 +493,4 @@ button:active {
 @media only screen and (min-width: 1024px) {
     /* regole per il desktop qui */
 }
+>>>>>>> 6959ff28eaada83f83f049ca727829b013a53ba0
