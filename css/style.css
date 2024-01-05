@@ -481,3 +481,16 @@ button:active {
     top: 10%;
     right: 1%;
 }
+<<<<<<< HEAD
+=======
+
+/* dispositivi tablet  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* regole per il tablet qui */
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    /* regole per il desktop qui */
+}
+>>>>>>> 6959ff28eaada83f83f049ca727829b013a53ba0
