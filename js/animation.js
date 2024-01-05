@@ -16,7 +16,6 @@ stopBtn.onclick = function () {
     })
 }
 
-
 playBtn.onclick = function () {
     closingPopUp()
     createCard('');

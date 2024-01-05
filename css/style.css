@@ -124,7 +124,7 @@ main {
 }
 
 #venusContainer img {
-    width: 15px;
+    width: 20px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -143,7 +143,7 @@ main {
 }
 
 #earthContainer img {
-    width: 25px;
+    width: 20px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -162,7 +162,7 @@ main {
 }
 
 #marsContainer img {
-    width: 20px;
+    width: 13px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -172,7 +172,7 @@ main {
 #jupiterContainer {
     width: 650px;
     position: absolute;
-    left: 36%;
+    left: 34%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -181,7 +181,7 @@ main {
 }
 
 #jupiterContainer img {
-    width: 30px;
+    width: 60px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -191,7 +191,7 @@ main {
 #saturnContainer {
     width: 880px;
     position: absolute;
-    left: 32%;
+    left: 29%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -200,7 +200,7 @@ main {
 }
 
 #saturnContainer img {
-    width: 45px;
+    width: 60px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -210,7 +210,7 @@ main {
 #uranusContainer {
     width: 1100px;
     position: absolute;
-    left: 29%;
+    left: 25%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -219,7 +219,7 @@ main {
 }
 
 #uranusContainer img {
-    width: 50px;
+    width: 35px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -229,7 +229,7 @@ main {
 #neptuneContainer {
     width: 1300px;
     position: absolute;
-    left: 26%;
+    left: 21%;
     top: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -238,7 +238,7 @@ main {
 }
 
 #neptuneContainer img {
-    width: 50px;
+    width: 35px;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotation;
@@ -481,8 +481,6 @@ button:active {
     top: 10%;
     right: 1%;
 }
-<<<<<<< HEAD
-=======
 
 /* dispositivi tablet  */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -493,4 +491,3 @@ button:active {
 @media only screen and (min-width: 1024px) {
     /* regole per il desktop qui */
 }
->>>>>>> 6959ff28eaada83f83f049ca727829b013a53ba0

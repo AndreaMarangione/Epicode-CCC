@@ -29,7 +29,7 @@ const globalData = {
             path: './assets/imgCard/starSun.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Sole',
             popUpPosition: {
-                top: '85px',
+                top: '93px',
                 left: '-8px',
             },
         },
@@ -48,7 +48,7 @@ const globalData = {
                 width: '150px',
             },
             popUpPosition: {
-                top: '50px',
+                top: '58px',
                 left: '-30px',
             },
         },
@@ -67,7 +67,7 @@ const globalData = {
                 width: '220px',
             },
             popUpPosition: {
-                top: '50px',
+                top: '58px',
                 left: '-35px',
             },
         },
@@ -86,7 +86,7 @@ const globalData = {
                 width: '330px',
             },
             popUpPosition: {
-                top: '50px',
+                top: '58px',
                 left: '-30px',
             },
         },
@@ -105,7 +105,7 @@ const globalData = {
                 width: '480px',
             },
             popUpPosition: {
-                top: '50px',
+                top: '58px',
                 left: '-35px',
             },
         },
@@ -116,16 +116,16 @@ const globalData = {
             path: './assets/imgCard/planetJupiter.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Giove_(astronomia)',
             staticPosition: {
-                left: '22%',
+                left: '21%',
                 width: '50px',
             },
             dynamicPosition: {
-                left: '36%',
+                left: '34%',
                 width: '650px',
             },
             popUpPosition: {
-                top: '50px',
-                left: '-27px',
+                top: '58px',
+                left: '-14px',
             },
         },
         {
@@ -135,16 +135,16 @@ const globalData = {
             path: './assets/imgCard/planetSaturn.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Saturno_(astronomia)',
             staticPosition: {
-                left: '16%',
+                left: '15%',
                 width: '50px',
             },
             dynamicPosition: {
-                left: '32%',
+                left: '29%',
                 width: '880px',
             },
             popUpPosition: {
-                top: '50px',
-                left: '-20px',
+                top: '58px',
+                left: '-14px',
             },
         },
         {
@@ -158,12 +158,12 @@ const globalData = {
                 width: '50px',
             },
             dynamicPosition: {
-                left: '29%',
+                left: '25%',
                 width: '1100px',
             },
             popUpPosition: {
-                top: '50px',
-                left: '-15px',
+                top: '58px',
+                left: '-25px',
             },
         },
         {
@@ -177,12 +177,12 @@ const globalData = {
                 width: '50px',
             },
             dynamicPosition: {
-                left: '26%',
+                left: '21%',
                 width: '1300px',
             },
             popUpPosition: {
-                top: '50px',
-                left: '-15px',
+                top: '58px',
+                left: '-25px',
             },
         },
     ]
