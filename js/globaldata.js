@@ -44,7 +44,7 @@ const globalData = {
             },
             popUpPosition: {
                 top: '50px',
-                left: '-35px',
+                left: '-30px',
             },
         },
         {
