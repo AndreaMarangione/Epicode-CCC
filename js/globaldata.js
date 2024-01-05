@@ -2,6 +2,7 @@ const playBtn = document.getElementById('play');
 const stopBtn = document.getElementById('stop');
 const divPlanets = document.querySelectorAll('#galaxy-container div');
 const popUpPlanets = document.querySelectorAll('.pop-up');
+const planetsImg = document.querySelectorAll('.planetsImg');
 const preloader = document.getElementById('preloader');
 
 window.onload = function () {
@@ -38,9 +39,13 @@ const globalData = {
             description: "Mercurio, il pianeta più vicino al Sole, è un mondo roccioso e scottante. Senza atmosfera significativa, le temperature variano estremamente. Esplorare Mercurio significa affrontare sfide termiche uniche e scoprire i segreti della sua storia geologica. 🪐🔥",
             path: './assets/imgCard/planetMercury.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Mercurio_(astronomia)',
-            staticPosition: '44%',
+            staticPosition: {
+                left: '44%',
+                width: '50px',
+            },
             dynamicPosition: {
                 left: '47%',
+                width: '150px',
             },
             popUpPosition: {
                 top: '50px',
@@ -53,9 +58,13 @@ const globalData = {
             description: "Venere, la 'gemella' rovente della Terra, è avvolta da un'atmosfera densa e calda. Il suo paesaggio è caratterizzato da pianure vulcaniche e montagne imponenti. Senza stagioni come le conosciamo, la sua superficie è costantemente avvolta in una fitta coperta nuvolosa. Esplorare Venere sfida la scienza, offrendo insight preziosi sulle dinamiche atmosferiche e geologiche. Un pianeta misterioso che continua a intrigare gli esploratori spaziali. 🪐🔥",
             path: './assets/imgCard/planetVenus.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Venere_(astronomia)',
-            staticPosition: '39%',
+            staticPosition: {
+                left: '39%',
+                width: '50px',
+            },
             dynamicPosition: {
                 left: '45%',
+                width: '220px',
             },
             popUpPosition: {
                 top: '50px',
@@ -68,9 +77,13 @@ const globalData = {
             description: "La Terra è il nostro pianeta, ricco di varietà. Oceani estesi, montagne imponenti e una vasta gamma di creature lo caratterizzano. Le stagioni portano cambiamenti, dalla neve all'estate. Esplorare la Terra significa scoprire luoghi sorprendenti e creare connessioni con la diversità che offre. 🌍✨",
             path: './assets/imgCard/planetEarth.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Terra',
-            staticPosition: '33%',
+            staticPosition: {
+                left: '33%',
+                width: '50px',
+            },
             dynamicPosition: {
                 left: '42%',
+                width: '330px',
             },
             popUpPosition: {
                 top: '50px',
@@ -83,9 +96,13 @@ const globalData = {
             description: "Marte, il nostro vicino nel sistema solare, è un pianeta rosso e affascinante. Con paesaggi desertici, valli profonde e poli gelati, offre uno spettacolo unico. Le sue stagioni sono lunghe, e le tempeste di sabbia possono essere intense. Esplorare Marte è un'avventura scientifica in continua evoluzione, aprendo nuove prospettive sul nostro sistema solare. 🚀🔴",
             path: './assets/imgCard/planetMars.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Marte_(astronomia)',
-            staticPosition: '28%',
+            staticPosition: {
+                left: '28%',
+                width: '50px',
+            },
             dynamicPosition: {
                 left: '39%',
+                width: '480px',
             },
             popUpPosition: {
                 top: '50px',
@@ -98,9 +115,13 @@ const globalData = {
             description: "Giove, il gigante gassoso del nostro sistema solare, è uno spettacolo maestoso. Con vaste fasce nuvolose e la Grande Macchia Rossa, è un pianeta di dimensioni imponenti. Le sue lune e il potente campo magnetico aggiungono al suo fascino. Esplorare Giove è un'avventura astrale, offrendo uno sguardo su fenomeni unici nel sistema solare e aprendo porte a nuove scoperte cosmiche. 🪐🌌",
             path: './assets/imgCard/planetJupiter.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Giove_(astronomia)',
-            staticPosition: '22%',
+            staticPosition: {
+                left: '22%',
+                width: '50px',
+            },
             dynamicPosition: {
                 left: '36%',
+                width: '650px',
             },
             popUpPosition: {
                 top: '50px',
@@ -113,9 +134,13 @@ const globalData = {
             description: "Saturno, famoso per gli anelli spettacolari, è un gigante gassoso con una presenza iconica. Esplorare Saturno significa immergersi nell'architettura intricata dei suoi anelli e studiare la sua vasta famiglia di lune. Un pianeta affascinante da esaminare nel nostro sistema solare. 🪐💫",
             path: './assets/imgCard/planetSaturn.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Saturno_(astronomia)',
-            staticPosition: '16%',
+            staticPosition: {
+                left: '16%',
+                width: '50px',
+            },
             dynamicPosition: {
                 left: '32%',
+                width: '880px',
             },
             popUpPosition: {
                 top: '50px',
@@ -128,9 +153,13 @@ const globalData = {
             description: "Urano, il gigante ghiacciato, si distingue per l'inclinazione estrema dell'asse. Con un aspetto azzurro e anelli sottili, offre uno spettacolo celeste unico. Esplorare Urano significa sondare i misteri delle sue atmosfere dinamiche e della sua struttura interna. 🪐❄️",
             path: './assets/imgCard/planetUrano.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Urano_(astronomia)',
-            staticPosition: '10%',
+            staticPosition: {
+                left: '10%',
+                width: '50px',
+            },
             dynamicPosition: {
                 left: '29%',
+                width: '1100px',
             },
             popUpPosition: {
                 top: '50px',
@@ -143,9 +172,13 @@ const globalData = {
             description: "Nettuno, il pianeta blu scuro, è un gigante gassoso con atmosfera tempestosa e anelli sfumati. Le sue lune, tra cui Tritone con geysers, sono affascinanti. Esplorare Nettuno implica scrutare le sue caratteristiche atmosferiche e comprendere la sua dinamica unica. 🪐🌊",
             path: './assets/imgCard/planetNeptune.jpeg',
             wikiUrl: 'https://it.wikipedia.org/wiki/Nettuno_(astronomia)',
-            staticPosition: '4%',
+            staticPosition: {
+                left: '4%',
+                width: '50px',
+            },
             dynamicPosition: {
                 left: '26%',
+                width: '1300px',
             },
             popUpPosition: {
                 top: '50px',
